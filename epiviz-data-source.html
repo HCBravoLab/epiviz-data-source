@@ -1,49 +1,8 @@
 <!-- Polymer dependency -->
 <link rel="import" href="../polymer/polymer.html">
 
-<!-- Jquery (mostly not used) -->
-<script src="src/js/lib/jquery/jquery-1.8.2.js"></script>
-
-<!-- Libraries -->
-<script src="src/js/lib/closure/goog/base.js"></script>
-<script src="src/js/lib/sprintf-0.6.js"></script>
-
-<!-- Epiviz Libraries -->
-<script src="src/js/epiviz/deferred/deferred.js"></script>
-<script src="src/js/epiviz/deferred/promise.js"></script>
-<script src="src/js/epiviz/utils/utils.js"></script>
-<script src="src/js/epiviz/caja/caja-standalone.js"></script>
-<script src="src/js/epiviz/utils/expression-parser.js"></script>
-<script src="src/js/epiviz/utils/iterable.js"></script>
-<script src="src/js/epiviz/utils/iterable-array.js"></script>
-
-<script src="src/js/epiviz/ui/charts/margins.js"></script>
-<script src="src/js/epiviz/ui/charts/color-palette.js"></script>
-
-<script src="src/js/epiviz/events/event-listener.js"></script>
-<script src="src/js/epiviz/events/event.js"></script>
-<script src="src/js/epiviz/events/event-result.js"></script>
-
-<script src="src/js/epiviz/measurements/measurement.js"></script>
-<script src="src/js/epiviz/measurements/measurement-hashtable.js"></script>
-<script src="src/js/epiviz/measurements/measurement-set.js"></script>
-<script src="src/js/epiviz/measurements/measurements-manager.js"></script>
-
-<script src="src/js/epiviz/data/data-provider.js"></script>
-<script src="src/js/epiviz/data/data-provider-factory.js"></script>
-<script src="src/js/epiviz/data/data-manager.js"></script>
-<script src="src/js/epiviz/data/empty-response-data-provider.js"></script>
-<script src="src/js/epiviz/data/cache.js"></script>
-<script src="src/js/epiviz/data/epiviz-api-data-provider.js"></script>
-<script src="src/js/epiviz/data/message-type.js"></script>
-<script src="src/js/epiviz/data/request.js"></script>
-<script src="src/js/epiviz/data/request-stack.js"></script>
-<script src="src/js/epiviz/data/response.js"></script>
-<script src="src/js/epiviz/data/webserver-data-provider.js"></script>
-<script src="src/js/epiviz/data/websocket-data-provider.js"></script>
-<script src="src/js/epiviz/config.js"></script>
-
-<script src="src/js/epiviz/ui/web-args-manager.js"></script>
+<link rel="import" href="../epiviz-imports/epiviz-common-js.html">
+<link rel="import" href="../epiviz-imports/epiviz-data-source-import.html">
 
 <dom-module id="epiviz-data-source">
 <template>
