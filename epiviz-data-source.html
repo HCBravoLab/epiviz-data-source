@@ -35,12 +35,12 @@ Polymer({
     },
 
         // not necessary just for testing
-    epivizConfig: {
+    config: {
       type: Object,
       notify: true
     },
 
-    epivizDataManager: {
+    dataManager: {
         type: Object,
         otify: true
       }
@@ -264,11 +264,9 @@ Polymer({
 
         /** @type {epiviz.data.DataManager} */
         var dataManager = new epiviz.data.DataManager(config, dataProviderFactory);
-        this.epivizConfig = config;
-        this.epivizDataManager = dataManager;
 
-        console.log(config);
-        console.log(dataManager);
+        this.config = config;
+        this.dataManager = dataManager;
       }
     });
 </script>
