@@ -1,6 +1,5 @@
 <!-- Polymer dependency -->
 <link rel="import" href="../polymer/polymer.html">
-
 <link rel="import" href="../epiviz-imports/epiviz-common-js.html">
 
 <dom-module id="epiviz-data-source">
@@ -30,10 +29,25 @@ Polymer({
     providerUrl: {
       type: String,
       notify: true
-          // readOnly: true
+      // readOnly: true
     },
 
-        // not necessary just for testing
+    measurements: {
+      type: Object,
+      notify: true
+    },
+
+    measurementSet: {
+      type: Object,
+      notify: true
+    },
+
+    seqInfos: {
+      type: Object,
+      notify: true
+    },
+
+    // not necessary just for testing
     config: {
       type: Object,
       notify: true
@@ -41,7 +55,7 @@ Polymer({
 
     dataManager: {
         type: Object,
-        otify: true
+        notify: true
       }
     },
 
@@ -266,6 +280,17 @@ Polymer({
 
         this.config = config;
         this.dataManager = dataManager;
+
+        var self = this;
+
+        this.dataManager.getMeasurements(function(result) {
+          self.measurements = result.raw();
+          self.measurementSet = result;
+        });
+
+        this.dataManager.getSeqInfos(function(result) {
+          self.seqInfos = result;
+        });
       }
     });
 </script>
