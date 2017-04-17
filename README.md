@@ -1,4 +1,21 @@
-to access datamanger
+# Installation
+
+`bower install hcbravolab/epiviz-data-source`
+
+# Documentation
+run a local instance of polymer-server
+`polymer serve`
+
+Then navigate to http://localhost:8080/components/epiviz-data-source/
+
+# Demo
+
+run a local instance of polymer-server
+`polymer serve`
+
+Then navigate to http://localhost:8080/components/epiviz-data-source/demo/
+
+# Access element DataManger
 
 ```
 var elem = document.querySelector('epiviz-data-source');
