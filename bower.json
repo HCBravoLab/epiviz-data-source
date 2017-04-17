@@ -21,5 +21,8 @@
   "dependencies": {
     "polymer": "Polymer#^1.6.1",
     "epiviz-imports": "hcbravolab/epiviz-imports"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.1.8"
   }
 }
