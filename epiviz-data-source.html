@@ -101,6 +101,18 @@ To use, add `<epiviz-data-source>` at the top of your body:
 
       constructor() {
         super();
+      }
+
+      connectedCallback() {
+        super.connectedCallback();
+      }
+
+      disconnectedCallback() {
+        super.connectedCallback();
+      }
+
+      ready() {
+        super.ready();
         var settingsMap = {
 
           configType: 'default',
@@ -332,20 +344,8 @@ To use, add `<epiviz-data-source>` at the top of your body:
         });
       }
 
-      connectedCallback() {
-        super.connectedCallback();
-      }
-
-      disconnectedCallback() {
-        super.connectedCallback();
-      }
-
-      ready() {
-        super.ready();
-      }
-
     }
-        
+
     customElements.define(EpivizDataSource.is, EpivizDataSource);
   </script>
 </dom-module>
